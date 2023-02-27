@@ -1,0 +1,157 @@
+.menu a:nth-child(5){
+
+       background-color: rgb(103, 103, 255);
+       color: white;
+       border-radius: 6px;
+       border-color: rgb(103, 103, 255);
+       padding: 15px;
+      
+
+       
+}
+.menu a:nth-child(4){
+
+    background-color: rgb(103, 103, 255);
+    color: white;
+    border-radius: 6px;
+    border-color: rgb(103, 103, 255);
+    margin-left: 500px;
+    padding: 15px;
+   
+
+    
+}
+.menu a
+{   
+    margin-left: 20px
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+  
+}
+a:hover {
+
+    background-color: rgb(103, 103, 255);
+    border-radius: 9px;
+    border-color: rgb(103, 103, 255);
+    color: white;
+    padding: 15px;
+    transition: 0.9s;
+    justify-content: center;
+    align-items: center;
+
+}
+#imgage_c
+{
+    position: absolute;
+    opacity: 0;
+    transition: all 1.2s;
+}
+.menu {
+    position: fixed;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 35px rgba(52, 55, 255, 0.103);
+    margin-top: -150px;
+    padding-left: 800px;
+    width: 100%;
+}
+.title p {
+    color: rgb(54, 84, 255);
+    font-size: 33px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 150px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.new_tovar p {
+
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 90px;
+  
+    font-weight: normal;
+}
+body
+{
+    margin: 0;padding: 0;
+}
+.itms1, .items2{
+    cursor: pointer;
+    background-color: aliceblue;
+    border-radius: 450px;
+    width: 70px;
+    text-align: center;
+    height: 70px;
+
+}
+
+
+.carusel {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    font-size: 60px;
+    justify-content: space-around;
+    margin-top: 400px;
+}
+.card
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img
+{
+    width: 500px;
+    height: 500px;
+}
+.footer a {
+
+    padding-left: 20px;
+    color: black;
+    font-weight: bold;
+}
+.footer a:nth-child(4){
+
+    background-color: rgb(103, 103, 255);
+    color: white;
+    border-radius: 6px;
+    border-color: rgb(103, 103, 255);
+    margin-left: 500px;
+    padding: 15px;
+   
+
+    
+}
+.menu a:nth-child(5){
+
+    background-color: rgb(103, 103, 255);
+    color: white;
+    border-radius: 6px;
+    border-color: rgb(103, 103, 255);
+    padding: 15px;
+   
+
+    
+}
+.footer {
+    height: 180px;
+    display: flex;
+    background-color: rgb(229, 231, 240);
+    box-shadow: 3px 3px 35px rgba(52, 55, 255, 0.103);
+    font-size: 21px;
+
+    gap: 20px;
+    padding-left: 650px;
+    margin-top: 400px;
+    align-items: center;
+}
