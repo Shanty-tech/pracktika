@@ -1,0 +1,49 @@
+body
+{
+    margin: 0;padding: 0;
+}
+
+.menu {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 35px rgba(52, 55, 255, 0.103);
+    padding-left: 800px;
+
+}
+
+.menu a:nth-child(5){
+
+    background-color: rgb(103, 103, 255);
+    color: white;
+    border-radius: 6px;
+    border-color: rgb(103, 103, 255);
+    padding: 15px;
+   
+
+    
+}
+.menu a:nth-child(4){
+
+ background-color: rgb(103, 103, 255);
+ color: white;
+ border-radius: 6px;
+ border-color: rgb(103, 103, 255);
+ margin-left: 500px;
+ padding: 15px;
+
+
+ 
+}
+.menu a
+{   
+ margin-left: 20px
+
+}
+
+a {
+ text-decoration: none;
+ color: black;
+
+}
