@@ -40,6 +40,28 @@ a:hover {
     align-items: center;
 
 }
+.btn_buy {
+
+    padding-left: 150px;
+}
+.text {
+    text-transform: uppercase;
+}
+.price {
+        font-size: 25px;
+        margin-left: 420px;
+        color: gray;
+}
+.btn_buy button{
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    border-color: rgb(103, 103, 255);
+
+   
+    background-color: rgb(103, 103, 255);
+}
 #imgage_c
 {
     position: absolute;

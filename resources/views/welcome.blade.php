@@ -14,6 +14,9 @@
             @foreach($prod as $obprod)
             <div id="imgage_c">
                 <img src="{{  $obprod->image  }}" alt="">
+                <div class="text">{{  $obprod->name_product  }}</div>
+                <div class="price">{{  $obprod->price  }}</div>
+                <div class="btn_buy"><button>Добавить в корзину</button></div>
             </div>
             @endforeach
             <!-- <div id="imgage_c">

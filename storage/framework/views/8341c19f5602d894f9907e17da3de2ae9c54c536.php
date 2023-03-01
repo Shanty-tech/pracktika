@@ -14,6 +14,9 @@
             <?php $__currentLoopData = $prod; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $obprod): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <div id="imgage_c">
                 <img src="<?php echo e($obprod->image); ?>" alt="">
+                <div class="text"><?php echo e($obprod->name_product); ?></div>
+                <div class="price"><?php echo e($obprod->price); ?></div>
+                <div class="btn_buy"><button>Добавить в корзину</button></div>
             </div>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
             <!-- <div id="imgage_c">
