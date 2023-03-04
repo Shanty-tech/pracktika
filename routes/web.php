@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 
@@ -23,7 +23,12 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/cart', function () {
     return view('cart');
 });
-Route::get('/welcome', function () {
-    return view('welcome');
+Route::get('/about', function () {
+    return view('about');
 });
-Route::get('/welcome', [App\Http\Controllers\product::class, 'product']);
+// Route::get('/welcome', function () {
+//     return view('welcome');
+// });
+Route::get('/', [App\Http\Controllers\product::class, 'product'])->name('welcome');
+Route::get('/cart', [App\Http\Controllers\product::class, 'products']);
+Route::get('/korzina{id}', [App\Http\Controllers\korzina::class, 'add']);

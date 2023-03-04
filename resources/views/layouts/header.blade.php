@@ -10,9 +10,9 @@
 <body>  
     <header>
         <div class="menu">
-            <a href="welcome">О нас</a>
+            <a href="{{route('welcome')}}">О нас</a>
             <a href="cart">Каталог</a>
-            <a href="">Где нас найти</a>
+            <a href="about">Где нас найти</a>
             @guest
             <a href="register">Регистрация</a>
             <a href="login">Вход</a>

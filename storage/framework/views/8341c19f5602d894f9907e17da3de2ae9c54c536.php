@@ -15,25 +15,12 @@
             <div id="imgage_c">
                 <img src="<?php echo e($obprod->image); ?>" alt="">
                 <div class="text"><?php echo e($obprod->name_product); ?></div>
-                <div class="price"><?php echo e($obprod->price); ?></div>
+                <div class="price"><p><?php echo e($obprod->price); ?></p></div>
                 <div class="btn_buy"><button>Добавить в корзину</button></div>
             </div>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-            <!-- <div id="imgage_c">
-                <img src="../resources/img/cd79fb5a-77da-4bd8-a41f-55bd5c8dcca8.jpg" alt="">
-            </div>
-            <div id="imgage_c">
-                <img src="../resources/img/df8fbc9126d8c6d4_1920xH.jpg" alt="">
-            </div>
-            <div id="imgage_c">
-                <img src="../resources/img/6068989288.jpg" alt="">
-            </div>
-            <div id="imgage_c">
-                <img src="../resources/img/vneshnii-zhestkii-disk-seagate-sthb2000401-0-small.jpg" alt="">
-            </div> -->
         </div>
     <div class="items2" id="next">></div>
-    
 </div>
 
 <?php echo $__env->make('layouts.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /srv/users/yaujryim/gghtcpd-m1/resources/views/welcome.blade.php ENDPATH**/ ?>
