@@ -15,8 +15,12 @@
             <div id="imgage_c">
                 <img src="{{  $obprod->image  }}" alt="">
                 <div class="text">{{  $obprod->name_product  }}</div>
-                <div class="price"><p>{{  $obprod->price  }}</p></div>
-                <div class="btn_buy"><button>Добавить в корзину</button></div>
+                <div class="price"><p>{{  $obprod->price  }}$</p></div>
+                @guest
+                <div class="btn_buy"><button><a href="home">Авторизируйтесь</a></button></div>
+                @else
+                <div class="btn_buy"><button><a href="{{route('kor',$obprod->id)}}">Добавить в корзину</a></button></div>
+                @endguest
             </div>
             @endforeach
         </div>

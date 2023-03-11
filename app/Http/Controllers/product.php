@@ -7,14 +7,25 @@ use Illuminate\Http\Request;
 
 class product extends Controller
 {
-    public function product($name = 'id')
+    public function product()
     {
-        $prod = \App\Models\product::orderby($name)->limit(5)->get();
-        return view('welcome', ['prod'=>$prod]);
+        $prod = \App\Models\product::all();
+        return view('cart', ['prod'=>$prod]);
     }
-    public function products($name = 'id')
+    
+    public function products()
     {
-        $prod = \App\Models\product::orderby($name)->get();
+        $prod = \App\Models\product::all();
+        return view('cart', ['prod'=>$prod]);
+    }
+    public function min_price($price = 'price')
+    {
+        $prod = \App\Models\product::orderby($price, "ASC")->get();
+        return view('cart', ['prod'=>$prod]);
+    }
+    public function max_price($price = 'price')
+    {
+        $prod = \App\Models\product::orderby($price, "DESC")->get();
         return view('cart', ['prod'=>$prod]);
     }
 }

@@ -15,8 +15,12 @@
             <div id="imgage_c">
                 <img src="<?php echo e($obprod->image); ?>" alt="">
                 <div class="text"><?php echo e($obprod->name_product); ?></div>
-                <div class="price"><p><?php echo e($obprod->price); ?></p></div>
-                <div class="btn_buy"><button>Добавить в корзину</button></div>
+                <div class="price"><p><?php echo e($obprod->price); ?>$</p></div>
+                <?php if(auth()->guard()->guest()): ?>
+                <div class="btn_buy"><button><a href="home">Авторизируйтесь</a></button></div>
+                <?php else: ?>
+                <div class="btn_buy"><button><a href="<?php echo e(route('kor',$obprod->id)); ?>">Добавить в корзину</a></button></div>
+                <?php endif; ?>
             </div>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div>

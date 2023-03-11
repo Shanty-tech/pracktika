@@ -62,6 +62,10 @@
                                         <?php echo e(__('Выйти')); ?>
 
                                     </a>
+                                    <?php if(Auth::user()->name == "admin"): ?>
+                                    <a class="dropdown-item" href="<?php echo e(route('admin')); ?>">admin panel
+                                    </a>
+                                    <?php endif; ?>
 
                                     <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" class="d-none">
                                         <?php echo csrf_field(); ?>

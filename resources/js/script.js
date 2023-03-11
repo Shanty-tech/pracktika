@@ -5,33 +5,33 @@ var img = document.querySelectorAll("#imgage_c")
 
 if (prev != null){
 let number_img = img.length-1;
-img[number_img].style = "opacity: 1; transition: all 1s"
+img[number_img].style = "opacity: 1; z-index: 999; transition: all 1s"
 prev.addEventListener('click', ()=>{
     if(number_img > 0)
         {
-            img[number_img].style = "opacity: 0; transition: all 1s"
+            img[number_img].style = "opacity: 0; z-index: 0; transition: all 1s"
             number_img -= 1;
-            img[number_img].style = "opacity: 1; transition: all 1s"
+            img[number_img].style = "opacity: 1; z-index: 999; transition: all 1s"
         }
     else
     {
-        img[number_img].style = "opacity: 0; transition: all 1s"
+        img[number_img].style = "opacity: 0; z-index: 0; transition: all 1s"
         number_img = img.length-1;
-        img[number_img].style = "opacity: 1; transition: all 1s"
+        img[number_img].style = "opacity: 1; z-index: 999; transition: all 1s"
     }
 });
 next.addEventListener('click', ()=>{
     if(number_img == img.length-1)
         {
-            img[number_img].style = "opacity: 0; transition: all 1s"
+            img[number_img].style = "opacity: 0; z-index: 0; transition: all 1s"
             number_img = 0;
-            img[number_img].style = "opacity: 1; transition: all 1s"
+            img[number_img].style = "opacity: 1; z-index: 999; transition: all 1s"
         }
     else
     {
-        img[number_img].style = "opacity: 0; transition: all 1s"
+        img[number_img].style = "opacity: 0; z-index: 0; transition: all 1s"
         number_img += 1;
-        img[number_img].style = "opacity: 1; transition: all 1s"
+        img[number_img].style = "opacity: 1; z-index: 999; transition: all 1s"
     }
 });
 

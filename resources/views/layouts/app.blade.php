@@ -60,6 +60,10 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Выйти') }}
                                     </a>
+                                    @if(Auth::user()->name == "admin")
+                                    <a class="dropdown-item" href="{{ route('admin') }}">admin panel
+                                    </a>
+                                    @endif
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
