@@ -5,8 +5,8 @@
 <div class="new_tovar">
         <p>Каталог нашего сайта</p>
     </div>
-    <a href="{{ route('min_price') }}">Сначала дешёвые</a>
-    <a href="{{ route('max_price') }}">Сначала дорогие</a>
+    <div class="min"><a href="{{ route('min_price') }}">Сначала дешёвые</a></div>
+    <div class="max"><a href="{{ route('max_price') }}">Сначала дорогие</a></div>
 <div class="container" id="container_prod">
     
         @foreach($prod as $obprod)

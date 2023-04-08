@@ -21,7 +21,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/home/admin_panel', [App\Http\Controllers\AdminController::class, 'view_bd'])->name('admin');
-Route::get('/home/admin_panel/add', [App\Http\Controllers\AdminController::class, 'add'])->name('add_tov');
+Route::post('/home/admin_panel/add', [App\Http\Controllers\AdminController::class, 'add'])->name('add_tov');
 Route::get('/home/admin_panel/delete_tov_bd{id}', [App\Http\Controllers\AdminController::class, 'delete_tov_bd'])->name('delete_tov_bd');
 Route::get('/cart', function () {
     return view('cart');
@@ -29,9 +29,6 @@ Route::get('/cart', function () {
 Route::get('/about', function () {
     return view('about');
 });
-// Route::get('/welcome', function () {
-//     return view('welcome');
-// });
 Route::get('/', [App\Http\Controllers\product::class, 'product'])->name('welcome');
 Route::get('/cart', [App\Http\Controllers\product::class, 'products']);
 Route::get('/cart/min_price', [App\Http\Controllers\product::class, 'min_price'])->name('min_price');
@@ -39,3 +36,4 @@ Route::get('/cart/max_price', [App\Http\Controllers\product::class, 'max_price']
 Route::get('/korzina', [App\Http\Controllers\korzina::class, 'view_kor'])->name('korzina');
 Route::get('/korzina{id}', [App\Http\Controllers\korzina::class, 'add'])->name('kor');
 Route::get('/korzina/delete{id}', [App\Http\Controllers\korzina::class, 'dellete'])->name('del_kor');
+Route::post('korzina/update{id}',[App\Http\Controllers\korzina::class,'update'])->name('cartUpadate');

@@ -18,6 +18,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('user_id');
             $table->string('tovar_id');
+            $table->integer('quantity')->default('1');
         });
     }
 

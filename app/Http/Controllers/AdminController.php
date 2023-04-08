@@ -13,12 +13,14 @@ class AdminController extends Controller
     }   
     public function add(Request $req)
     {
-
+      $file = $req->file('image');
+      $filename = $file->getClientOriginalName();
+      $file -> move(public_path('img'), $filename);
         \App\Models\product::create(
           [
             "name_product" => $req->input('name_product'),
             "price" => $req->input('price'),
-            "image"  => $req->input('image')
+            "image"  => 'img/'.$filename
           ]
         );
         return redirect(route('admin'));

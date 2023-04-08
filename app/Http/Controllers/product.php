@@ -10,7 +10,7 @@ class product extends Controller
     public function product()
     {
         $prod = \App\Models\product::all();
-        return view('cart', ['prod'=>$prod]);
+        return view('welcome', ['prod'=>$prod]);
     }
     
     public function products()

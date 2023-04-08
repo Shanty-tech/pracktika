@@ -17,10 +17,11 @@
                     @endforeach
                
     <br><br><br><br>
-                <form action="{{ route('add_tov') }}" method="GET" >
+                <form action="{{ route('add_tov') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
                     <input type="text" name="name_product" placeholder="name_product">
                     <input type="text" name="price" placeholder="price">
-                    <input type="text" name="image" placeholder="image url">
+                    <input type="file" name="image" placeholder="image">
                     <button type="submit">Добавить</button>
                 </form>
                 @else
